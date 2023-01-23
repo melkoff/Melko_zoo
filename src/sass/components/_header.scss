@@ -1,0 +1,117 @@
+.header {
+   background: $var4;
+   .gradient {
+      background: $var3;
+   }
+   &__container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+      display: flex;
+      align-items: center;
+      .header__logo {
+         flex: 0 0 30%;
+      }
+      .header__navigation {
+         display: flex;
+         align-items: center;
+         justify-content: end;
+         flex: 0 0 70%;
+         .header__phone {
+            display: flex;
+            align-items: center;
+            margin-right: 62px;
+            .header__circle {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               width: 28px;
+               height: 28px;
+               border-radius: 50%;
+               margin-right: 12px;
+            }
+            a {
+               font-family: $var5;
+               font-size: 32px;
+               font-weight: 700;
+               line-height: 100%;
+               color: $var1;
+               transition: 0.3s;
+               &:hover{
+                  opacity: 0.4;
+               }
+            }
+         }
+         .header__lang {
+            nav {
+               display: flex;
+               ul {
+                  display: flex;
+                  li {
+                     list-style: none;
+                     padding: 0 11px;
+                     display: flex;
+                     align-items: center;
+                     a {
+                        font-family: $var5;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 100%;
+                        color: $var1;
+                        transition: 0.3s;
+                        &:hover{
+                           opacity: 0.4;
+                        }
+                     }
+                  }
+               }
+               .burger-menu {
+                  height: 27px;
+                  width: 32px;
+                  position: relative;
+                  margin-left: 57px;
+                  span {
+                     position: absolute;
+                     top: 50%;
+                     left: 0;
+                     right: 0;
+                     height: 3px;
+                     background-color: $var1;
+                     max-width: 100%;
+                     transform: translate(0px, -50%);
+                     transition: 0.3s;
+                  }
+                  &::before {
+                     content: "";
+                     position: absolute;
+                     top: 0;
+                     left: 0;
+                     right: 0;
+                     height: 3px;
+                     background-color: $var1;
+                     max-width: 100%;
+                     transition: 0.3s;
+                  }
+                  &::after {
+                     content: "";
+                     position: absolute;
+                     bottom: 0;
+                     left: 0;
+                     right: 0;
+                     height: 3px;
+                     background-color: $var1;
+                     max-width: 100%;
+                     transition: 0.3s;
+                  }
+                  &:hover{
+                     cursor: pointer;
+                     &::after{
+                        left: 10px;
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}
