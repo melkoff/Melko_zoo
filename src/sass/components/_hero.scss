@@ -18,27 +18,35 @@
       opacity: 1;
       z-index: 1;
    }
-   // overflow-x: hidden;
-   // background: $var4;
-   .hero__container {
+   &__container {
       padding: 200px 15px 0;
       position: relative;
       z-index: 20;
       max-width: 1200px;
       margin: 0 auto;
       display: flex;
-      .hero__main-text{
-         // flex: 0 0 50%;
+      .hero__main-text {
+         flex: 0 0 50%;
+         span {
+            font-weight: 900;
+            font-size: 20px;
+            line-height: 18px;
+            color: $var2;
+            display: block;
+            text-align: right;
+            text-transform: uppercase;
+         }
+         h1 {
+            font-family: $var6;
+            font-size: 72px;
+            font-weight: 800;
+            line-height: 100%;
+         }
       }
-      .hero__main-image{
-         // flex: 0 0 50%;
-         // overflow-x: hidden;
-         // border-radius: 50%;
-         width: 760px;
-    height: 760px;
-    box-shadow: 0 4px 60px rgb(0 0 0 / 15%);
-    border-radius: 50%;
-    position: absolute;
+      .hero__main-image {
+         flex: 0 0 50%;
+         border-radius: 50%;
+         
       }
    }
 }
